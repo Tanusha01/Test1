@@ -1,0 +1,158 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  color: rgb(186, 121, 22);
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  font-weight: 500;
+  width: 617px;
+}
+.colortext {
+  text-decoration: underline;
+}
+label {
+  font-size: 20px;
+  width: 617px;
+  margin-top: 20px;
+}
+form input {
+  width: 600px;
+  height: 40px;
+  border: 2px solid rgb(186, 121, 22);
+  padding-left: 20px;
+  margin-top: 10px;
+}
+select {
+  width: 626px;
+  height: 46px;
+  border: 2px solid rgb(186, 121, 22);
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 25px;
+}
+.information {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 500px;
+}
+.inf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inf_2 {
+  font-size: 18px;
+  color: rgb(110, 102, 102);
+  margin: 0px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  border: 2px solid rgb(186, 121, 22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.form__field {
+  margin-bottom: 10px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+}
+
+.form button {
+  width: 100px;
+  height: 40px;
+  border: 2px solid rgb(186, 121, 22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  h1,
+  h2,
+  label {
+    width: auto;
+    padding: 10px;
+  }
+  form input {
+    width: 400px;
+  }
+  select {
+    width: 426px;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .information {
+    width: auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  form input {
+    width: 300px;
+  }
+  select {
+    width: 326px;
+  }
+}
+
+@media (max-width: 350px) {
+  form input {
+    width: 280px;
+  }
+  select {
+    width: 306px;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" lang="en" content="Tatsiana Polukoshko" />
+    <meta name="description" content="Тестовое задание" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Отправить заявку на участие в семинаре</h1>
+        <h2>Организаторы свяжутся с вами для подтверждения записи.</br>Участие в семинаре <span
+                class="colortext">бесплатное</span>.</h2>
+    </header>
+
+    <form action="#" class="form">
+        <div class="inf">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя..." required />
+        </div>
+        <div class="inf">
+            <label for="email">Контактный email</label>
+            <input type="text" id="email" name="email" placeholder="Введите ваш E-Mail" required />
+        </div>
+        <div class="inf"> <label for="inf" required>Интересующий семинар</label>
+            <select>
+                <option>Информационные технологии</option>
+                <option>Математика</option>
+                <option>Биология</option>
+                <option selected>Интересующий семинар</option>
+            </select>
+        </div>
+        <div class="footer">
+            <div class="information">
+                <p class="inf_2">Все поля обязательны для заполнения.</p>
+                <p class="inf_2">Отправляя заявку, вы соглашаетесь с договором оферты и политикой обработки данных.
+                </p>
+            </div>
+            <button type="submit" onClick="return Formdata(this.form)" value="Send">Отправить</button>
+
+
+    </form>
+    </div>
+    <script>
+        function Formdata(data) {
+            if (data.name != null && data.name.value.length == 0) {
+                alert('Упс, что-то не заполнено');
+                return false;
+            }
+            else {
+                alert('Ваша заявка успешно отправлена и находится в обработке. Ожидайте email с подтверждением бронирования.')
+            }
+        }
+
+        function Formdata(data) {
+            if (data.email != null && data.email.value.length == 0) {
+                alert('Упс, что-то не заполнено');
+                return false;
+            }
+            else {
+                alert('Ваша заявка успешно отправлена и находится в обработке. Ожидайте email с подтверждением бронирования.')
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
